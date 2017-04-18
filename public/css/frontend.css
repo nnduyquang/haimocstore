@@ -48,10 +48,96 @@ body {
 
 #slider {
   width: 100%;
-  height: 400px;
   background-color: #e67e22;
 }
 
-#slider .style-dot {
-  color: red;
+#slider .owl-theme .owl-nav.disabled + .owl-dots {
+  position: absolute;
+  margin-top: 0;
+  bottom: 10px;
+  left: 48%;
+}
+
+#slider .owl-theme .owl-dots span {
+  background: #fff;
+  opacity: 0.5;
+  border: solid 1px #111;
+  width: 15px;
+  height: 15px;
+}
+
+#slider .owl-dot.active span {
+  background: yellow;
+  opacity: 1;
+  border: solid 1px #ffffff;
+}
+
+#slider .owl-dot:hover span {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .owl-theme .owl-dots span {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
+
+#chuthich .av {
+  height: 110px;
+  border-bottom: solid 1px #e9e9e9;
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+
+#chuthich .av.p {
+  border-top: solid 1px #e9e9e9;
+}
+
+#chuthich .av ul {
+  height: 110px;
+  border-right: solid 1px #e9e9e9;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+#chuthich .av li {
+  float: left;
+  border-left: solid 1px #e9e9e9;
+  height: 110px;
+  overflow: hidden;
+  width: 249px;
+}
+
+#chuthich .av a {
+  display: block;
+  padding-top: 35px;
+  height: 75px;
+  line-height: 20px;
+  padding-left: 40px;
+  text-decoration: none;
+  color: #333;
+}
+
+#chuthich .av li:hover {
+  background-color: #f1f2f3;
+}
+
+#chuthich .av img {
+  display: block;
+  width: 60px;
+  height: 40px;
+  float: left;
+  margin-right: 20px;
+}
+
+#chuthich .av b {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .av {
+    overflow-x: scroll !important;
+  }
 }

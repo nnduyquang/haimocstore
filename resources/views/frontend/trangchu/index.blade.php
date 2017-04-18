@@ -3,5 +3,6 @@
 @section('container')
 
 @include('frontend.trangchu.slider')
+@include('frontend.trangchu.chuthich')
 
 @stop

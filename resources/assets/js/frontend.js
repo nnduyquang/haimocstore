@@ -4,14 +4,14 @@ var plugins = {
 $(document).ready(function () {
     function activeSlider() {
         plugins.slider.owlCarousel({
-            loop:true,
-            autoplay:true,
-            autoplayTimeout:5000,
-            items:1,
-            // dotClass:'style-dot'
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            items: 1,
         });
     }
-    if(plugins.slider.length){
+
+    if (plugins.slider.length) {
         activeSlider();
     }
 });

@@ -1,8 +1,31 @@
-#slider{
+#slider {
   width: 100%;
-  height:400px;
   background-color: #e67e22;
-  .style-dot{
-    color:red;
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    margin-top: 0;
+    bottom: 10px;
+    left: 48%;
+  }
+  .owl-theme .owl-dots span {
+    background: #fff;
+    opacity: 0.5;
+    border: solid 1px #111;
+    width: 15px;
+    height: 15px;
+  }
+  .owl-dot.active span {
+    background: yellow;
+    opacity: 1;
+    border: solid 1px #ffffff;
+  }
+  .owl-dot:hover span {
+    opacity: 1;
+  }
+}
+@media screen and(max-width: 768px) {
+  .owl-theme .owl-dots span {
+    width: 10px!important;
+    height: 10px!important;
   }
 }
